@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Landing/>
-      Daouda
+    
       <Footer/>
     </div>
   );

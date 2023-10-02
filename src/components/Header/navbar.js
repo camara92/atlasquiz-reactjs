@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <div>
       <div className='banner-container'>
-        <h1>Banner </h1>
+        <h1>Barre de navigation  </h1>
       </div>
-      <h3>Header </h3>
+      
     </div>
   )
 }

@@ -101,7 +101,7 @@ header {
 }
 
 .banner-container {
-  background: rgb(15, 0, 0);
+  background: rgb(51, 1, 28);
   padding: 20px 0;
   flex-basis: 80%;
 }
@@ -116,7 +116,7 @@ main {
 /* WELCOME PAGE */
 .welcomePage {
   background-color: var(--red-color);
-  /* background-image: url(images/wolverine.png); */
+   background-image: url("../images/logoatlas.png"); 
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
@@ -124,10 +124,11 @@ main {
   height: 500px;
 }
 
-/* .startingImg {
-  background-image: url(images/xmen.png);
+ .startingImg {
+  background-image: url("https://r.search.yahoo.com/_ylt=Awrii93uJxtlEi0kD61lAQx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzZiZWNkYjY4ZmJlOTRlNjlhY2I4ZjExNzg2OGE0OGU4BGdwb3MDMjA0BGl0A2Jpbmc-/RV=2/RE=1696307311/RO=11/RU=http%3a%2f%2fiptv.free-server.tn%2f2021%2f02%2flets-get-started%2f/RK=2/RS=cdRC6htlDF5j31mS4VZ4GD1F.q4-");
+  /* border-radius: 50% solid red; */
 }
-
+/*
 .leftImg {
   background-image: url(images/wolverine.png), url(images/griffes-gauche.png);
 }
@@ -180,11 +181,12 @@ main {
 
 /* FOOTER */
 footer {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
 }
 
 .footer-container {
+  background-color: black;
   padding: 20px 0;
   padding: 20px 0;
   flex: 0 1 80%;
