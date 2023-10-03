@@ -13,7 +13,24 @@ const Landing = () => {
       // refWolverine.current.textContent= ""; 
       setBtn(true);
     }, 1000);
-  }, [])
+  }, []); 
+
+  const setLeftImg = ()=>{
+    refWolverine.current.classList.add("leftImg");
+    // console.log("Je suis dans leftimg "); 
+    setTimeout(() => {
+      refWolverine.current.classList.remove("leftImg");
+      
+    }, 500);
+  }
+  const setRightImg = ()=>{
+    refWolverine.current.classList.add("rightImg");
+    // console.log("Je suis dans leftimg "); 
+    setTimeout(() => {
+      refWolverine.current.classList.remove("rightImg");
+      
+    }, 500);
+  }
 
 
 
@@ -21,10 +38,10 @@ const Landing = () => {
 
     <Fragment>
 
-      <div className='leftBox'>
+      <div className='leftBox' onMouseOver={setLeftImg}>
         <button className='btn-welcome'>Inscription</button>
       </div>
-      <div className='rightBox'>
+      <div className='rightBox'  onMouseOver={setRightImg}>
         <button className='btn-welcome'>Connexion </button>
       </div>
     </Fragment>
