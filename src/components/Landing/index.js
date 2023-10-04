@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, Fragment } from 'react'
-
+import {Link} from 'react-router-dom'
 const Landing = () => {
   const [btn, setBtn] = useState(false);
   const refWolverine = useRef(null);
@@ -38,11 +38,13 @@ const clearImg = ()=>{
     <Fragment>
 
       <div className='leftBox' onMouseOver={setLeftImg} onMouseOut={clearImg}>
-        <button className='btn-welcome'>Inscription</button>
+        <Link to="/signup" className='btn-welcome'>Inscription</Link>
+        {/* <button className='btn-welcome'>Inscription</button> */}
       </div>
       <div className='rightBox'  onMouseOver={setRightImg} onMouseOut={clearImg}>
-        <button className='btn-welcome'>Connexion </button>
+        <Link to="/login" className='btn-welcome'>Connexion </Link>
       </div>
+      
     </Fragment>
   )
   //  console.log(refWolverine );

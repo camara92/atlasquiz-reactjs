@@ -1,3 +1,6 @@
+import React from 'react'
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from "../Footer/footer";
 import Navbar from "../Header/navbar";
 import Welcome from "../Welcome";
@@ -8,17 +11,20 @@ import Signup from "../SignUp";
 import ErrorPage from "../ErrorPage";
 function App() {
   return (
-    <div className="App">
+
+    <Router>
       <Navbar />
-
-
-      <Welcome />
-      <Landing />
-      <Login />
-      <Signup />
-      <ErrorPage />
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route path="/welcome" component={Welcome} />
+        <Route path="/login" component={Login} />
+        <Route path="/signup" component={Signup} />
+        <Route component={ErrorPage} />
+      </Switch>
       <Footer />
-    </div>
+
+    </Router>
+
   );
 }
 
